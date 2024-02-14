@@ -1,0 +1,34 @@
+.main {
+  background-color: var(--main-theme);
+  padding: 0px;
+  margin: 0px;
+  flex: 1;
+  color: var(--text-theme);
+  position: sticky;
+}
+.main .main_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  padding: 20px 20px;
+}
+.main .main_inner .LOGO {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: var(--fs-xl);
+}
+
+.main .main_inner .links {
+  display: flex;
+  gap: 30px;
+  font-size: var(--fs-sm);
+  font-family: "Inter Tight", sans-serif;
+  /* font-optical-sizing: auto; */
+  font-style: normal;
+}
+.main .main_inner .links span {
+  display: flex;
+  gap: 30px;
+}

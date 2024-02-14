@@ -1,0 +1,21 @@
+.container-fluid {
+  background-color: var(--dark-theme);
+  flex: 1;
+}
+.container {
+}
+.container .heading_sec {
+  padding: 20px;
+  margin: 10px;
+}
+.container .heading_sec h1 {
+  font-size: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.container .heading_sec p {
+  font-size: var(--fs-xs);
+  font-family: "Inter Tight", sans-serif;
+  font-style: normal;
+}
