@@ -4,12 +4,12 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import BannerImg from "../../../public/images/baner.png"
 import blurImg from "../../../public/blur/banner.png"
 import "./baner.css"
-import MyImage from "@/app/utils/imageLazy";
+import MyImage from "@/utils/imageLazy";
 import Button from "../button/Button";
 const Baner = () => {
     return (
-        <div className="container-fluid">
-            <div className="container">
+        <div className="container-fluid baner_main">
+            <div className="container baner_inner">
                 <div className="row">
                     <div className="col">
                         <div className="heading">

@@ -1,21 +1,120 @@
-.container-fluid {
-  background-color: var(--dark-theme);
-  flex: 1;
+.project_main {
+  padding: 50px;
+  background-color: var(--main-theme);
+  min-height: auto;
+  border-bottom: 1px solid var(--light-theme);
 }
-.container {
-}
-.container .heading_sec {
-  padding: 20px;
-  margin: 10px;
-}
-.container .heading_sec h1 {
+
+.project_inner .heading_sec .heading {
   font-size: 50px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 500;
   font-style: normal;
+  color: var(--heading-theme);
 }
-.container .heading_sec p {
+.project_inner .heading_sec p {
   font-size: var(--fs-xs);
   font-family: "Inter Tight", sans-serif;
   font-style: normal;
+  color: var(--text-theme);
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 10px;
+}
+.project_box {
+  background-color: var(--dark-theme);
+  min-height: 450px;
+  min-width: 300px;
+  max-width: 550px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.project_box .badge {
+  border-radius: 10px;
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  background-color: var(--main-theme);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project_box .badge::after {
+  content: "The project is completed";
+  position: absolute;
+  bottom: 100%;
+  left: 87%;
+  transform: translateX(-50%);
+  padding: 5px;
+  margin: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.project_box .badge:hover::after {
+  opacity: 1;
+}
+
+.project_detail .heading {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  font-family: "Inter Tight", sans-serif;
+  font-style: normal;
+  color: var(--heading-theme);
+}
+.project_detail p {
+  font-size: var(--fs-xs);
+  font-family: "Inter Tight", sans-serif;
+  font-style: normal;
+  color: var(--text-theme);
+}
+.project_detail .form .title {
+  font-size: var(--fs-sm);
+  font-family: "Inter Tight", sans-serif;
+  font-style: normal;
+  color: var(--heading-theme);
+  padding-bottom: 8px;
+  margin-top: 30px;
+  border-bottom: 2px solid var(--light-theme);
+}
+
+.project_detail .form table {
+  width: 100%;
+}
+
+.project_detail .form table li {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fs-sm);
+  width: 100%;
+  font-family: "Inter Tight", sans-serif;
+  font-style: normal;
+  color: var(--heading-theme);
+  padding-bottom: 8px;
+  margin-top: 30px;
+  border-bottom: 2px solid var(--light-theme);
+  list-style: none;
+}
+
+.project_box .img_sec {
+  min-height: 460px;
+  min-width: 230px;
+  max-width: 550px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
