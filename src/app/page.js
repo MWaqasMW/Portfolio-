@@ -6,7 +6,7 @@ import ContactSec from "@/componets/contect_sec/ContactSec";
 import Footer from "@/componets/nav/footer/Footer";
 
 
-export default function App() {
+export default function Page() {
  return(
     <>
       <Header/>

@@ -1,4 +1,6 @@
-import React from 'react'
+'use client'
+
+import NavLink from "@/utils/hooks/useLink";
 import "./about_sec.css"
 import { IoArrowForward } from "react-icons/io5";
 const AboutSec = () => {
@@ -14,8 +16,8 @@ const AboutSec = () => {
 
                     <span className="d-flex gap-2 align-items-center f-4">
                         MORE ABOUT ME
-                        <div className="fs-4">
-                            <IoArrowForward />
+                        <div className="fs-4    ">
+                            <NavLink href="/about"><IoArrowForward /> </NavLink>
                         </div>
                     </span>
                 </div>

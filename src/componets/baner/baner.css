@@ -18,6 +18,9 @@
   font-style: normal;
   color: var(--heading-theme);
 }
+.baner_inner .heading strong {
+  color: var(--link-theme);
+}
 
 .baner_inner p {
   font-size: var(--fs-xs);
@@ -50,9 +53,15 @@
 }
 .baner_inner .img_sec .img {
   border-radius: 10px;
+  opacity: 0.8 !important;
 }
 
 .baner_inner .sec_col {
   display: flex;
   justify-content: center;
+}
+@media only screen and (max-width: 767px) {
+  .baner_inner .img_sec .img {
+    opacity: 0.2 !important;
+  }
 }

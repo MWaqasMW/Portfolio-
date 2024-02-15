@@ -1,0 +1,39 @@
+.skill_main {
+  padding: 80px 10px;
+  background-color: var(--main-theme);
+  min-height: auto;
+  border-bottom: 1px solid var(--light-theme);
+}
+
+.skill_inner .heading {
+  font-size: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--heading-theme);
+}
+
+.skill_inner .skill_detail .head {
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  font-family: "Inter Tight", sans-serif;
+  font-style: normal;
+  color: var(--heading-theme);
+}
+
+.skill_inner .skill_detail .watermarks {
+  margin: 40px 0px;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill_inner .skill_detail .watermarks span {
+  font-size: var(--fs-sm);
+  border: 1px solid var(--heading-theme);
+  font-weight: 400;
+  font-style: normal;
+  color: var(--heading-theme);
+  padding: 15px 30px;
+  border-radius: 60px;
+  margin: 10px;
+}

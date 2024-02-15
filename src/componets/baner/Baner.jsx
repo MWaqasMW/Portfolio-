@@ -26,7 +26,7 @@ const Baner = () => {
                     </div>
                     <div className="col-lg-6 col-12 sec_col">
                         <div className="img_sec">
-                            <MyImage src={BannerImg.src} placeholderSrc={blurImg} alt={"MWaqas"} className="img" />
+                            <MyImage className="img" zIndex={0} src={BannerImg.src} placeholderSrc={blurImg} alt={"MWaqas"} className="img" />
                         </div>
                     </div>
                 </div>

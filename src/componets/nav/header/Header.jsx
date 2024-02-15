@@ -1,11 +1,12 @@
 'use client'
 
 import { useState } from "react"
-import { AiOutlineClose } from "react-icons/ai";
 import { IoReorderTwoOutline } from "react-icons/io5";
 import CurrentBreakpoint from "@/utils/breakpoints";
 import "./header.css"
 import Darwer from "@/componets/drawer/Darwer"
+import NavLink from "@/utils/hooks/useLink";
+
 const Header = () => {
     const [open, setOpen] = useState(false)
     return (
@@ -14,26 +15,24 @@ const Header = () => {
                 <div className="LOGO">WAQAS</div>
                 {CurrentBreakpoint() === "mobile" ? null :
                     <div className="links">
-                        <span >Work</span>
-                        <span>About </span>
-                        <span>Contact </span>
+                        <NavLink href="/">Work</NavLink>
+                        <NavLink href="/about">About</NavLink>
+                        <NavLink href="/contact">Contact</NavLink>
                     </div>
                 }
                 {CurrentBreakpoint() === "mobile" &&
-
-                    <span onClick={(e) => setOpen(!open)}>
+                    <span onClick={(e) => setOpen(!open)} style={{ cursor: "pointer" }}>
                         {open ?
-
-                            <AiOutlineClose size={26} /> :
+                            null :
                             <IoReorderTwoOutline size={30} />
                         }
                     </span>
                 }
             </div>
-            {CurrentBreakpoint() === "mobile" && open && <Darwer />}
+            {CurrentBreakpoint() === "mobile" && open && <Darwer setOpen={setOpen} open={open} />}
         </div>
-
     )
 }
+
 
 export default Header

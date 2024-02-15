@@ -4,7 +4,6 @@
   margin: 0px;
   flex: 1;
   color: var(--text-theme);
-  position: sticky;
 }
 .main .main_inner {
   display: flex;
@@ -27,8 +26,12 @@
   font-family: "Inter Tight", sans-serif;
   /* font-optical-sizing: auto; */
   font-style: normal;
+  color: var(--link-theme);
 }
 .main .main_inner .links span {
   display: flex;
+  text-decoration: none;
+  color: var(--light-theme);
+  border-bottom: none;
   gap: 30px;
 }
