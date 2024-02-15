@@ -11,6 +11,7 @@
   font-weight: 500;
   font-style: normal;
   color: var(--heading-theme);
+  word-break: normal;
 }
 .project_inner .heading_sec p {
   font-size: var(--fs-xs);
