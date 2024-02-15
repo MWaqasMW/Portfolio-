@@ -1,6 +1,8 @@
 # Muhammad Waqas - Frontend & MERN Stack Developer
 
-![Profile Picture](https://media.licdn.com/dms/image/D4D03AQGRjcBJf8xO-Q/profile-displayphoto-shrink_800_800/0/1706957221297?e=1713398400&v=beta&t=p4DogJOmzUu_KKuDr5mQQZC5IydREy4UPqD0mYNZ4v8)
+<!-- Profile Picture -->
+<img src="https://media.licdn.com/dms/image/D4D03AQGRjcBJf8xO-Q/profile-displayphoto-shrink_800_800/0/1706957221297?e=1713398400&v=beta&t=p4DogJOmzUu_KKuDr5mQQZC5IydREy4UPqD0mYNZ4v8" alt="Profile Picture" width="200" height="200">
+
 
 
 ## About Me
@@ -71,17 +73,4 @@ I am an experienced React.js and frontend developer passionate about crafting us
 - Cricket
 
 ## Courses
-- [Course Name]
-- [Course Name]
-- [Course Name]
-
-## Achievements/Tasks
-- [Achievement/Task]
-- [Achievement/Task]
-- [Achievement/Task]
-
-## Code
-```javascript
-// Example code snippet showcasing your coding skills
-const greeting = "Hello, World!";
-console.log(greeting);
+- App/Web Development
