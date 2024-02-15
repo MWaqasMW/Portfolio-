@@ -126,6 +126,7 @@
 }
 .project_detail .form .info_links span {
   border-bottom: 1px solid var(--link-theme);
+  cursor: pointer;
 }
 
 .project_box .img_sec {

@@ -4,7 +4,6 @@
   color: var(--text-theme);
   min-height: 600px;
   height: auto;
-
   border-bottom: 1px solid var(--light-theme);
 }
 

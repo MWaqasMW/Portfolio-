@@ -1,7 +1,5 @@
 import React from 'react'
 import "./about_sec.css"
-import Button from '../button/Button'
-import { MdArrowOutward } from 'react-icons/md'
 import { IoArrowForward } from "react-icons/io5";
 const AboutSec = () => {
     return (

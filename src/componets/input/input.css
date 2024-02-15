@@ -1,0 +1,22 @@
+.input_main {
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+.input_main label {
+  color: var(--light-theme);
+}
+.input_main input {
+  margin-top: 5px;
+  padding: 20px;
+  width: 100%;
+  background-color: var(--input-theme);
+  outline: none;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.input_main ::placeholder {
+  color: var(--light-theme);
+}
+  
