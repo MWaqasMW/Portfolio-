@@ -18,18 +18,26 @@
   font-style: normal;
   color: var(--text-theme);
 }
+.project_inner .more {
+  font-size: var(--fs-sm);
+  font-family: "Inter Tight", sans-serif;
+  font-style: normal;
+  color: var(--link-theme);
+  text-align: center;
+  cursor: pointer;
+}
 
 .project {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  margin: 10px;
+  padding-bottom: 60px;
 }
 .project_box {
   background-color: var(--dark-theme);
-  min-height: 450px;
-  min-width: 300px;
+  min-height: 360px;
+  min-width: 200px;
+  /* width: 100%; */
   max-width: 550px;
   border-radius: 10px;
   position: relative;
@@ -108,13 +116,32 @@
   border-bottom: 2px solid var(--light-theme);
   list-style: none;
 }
+.project_detail .form .info_links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: var(--link-theme);
+  padding-top: 30px;
+}
+.project_detail .form .info_links span {
+  border-bottom: 1px solid var(--link-theme);
+}
 
 .project_box .img_sec {
-  min-height: 460px;
-  min-width: 230px;
+  min-height: 430px;
+  min-width: 180px;
   max-width: 550px;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 456px) {
+  .project_box {
+    min-height: 260px;
+  }
+  .project_box .img_sec {
+    min-height: 260px;
+  }
 }

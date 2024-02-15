@@ -8,7 +8,7 @@ import MyImage from "@/utils/imageLazy";
 import Button from "../button/Button";
 const Baner = () => {
     return (
-        <div className="container-fluid baner_main">
+        <div className="container-fluid baner_main m-0 p-0">
             <div className="container baner_inner">
                 <div className="row">
                     <div className="col">

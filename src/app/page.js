@@ -1,3 +1,4 @@
+import AboutSec from "@/componets/about_sec/AboutSec";
 import Baner from "@/componets/baner/Baner";
 import Header from "@/componets/nav/header/Header";
 import Projects from "@/componets/projects/Projects";
@@ -9,6 +10,7 @@ export default function App() {
       <Header/>
     <Baner/>
     <Projects/>
+    <AboutSec/>
     </>
  )
 }

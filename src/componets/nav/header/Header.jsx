@@ -9,8 +9,8 @@ import Darwer from "@/componets/drawer/Darwer"
 const Header = () => {
     const [open, setOpen] = useState(false)
     return (
-        <div className=" main">
-            <div className="container main_inner">
+        <div className="main p-0 m-0">
+            <div className="container main_inner ">
                 <div className="LOGO">WAQAS</div>
                 {CurrentBreakpoint() === "mobile" ? null :
                     <div className="links">
