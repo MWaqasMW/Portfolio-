@@ -1,0 +1,52 @@
+.review_main {
+  padding: 100px 10px;
+  background-color: var(--main-theme);
+  min-height: 300px;
+  border-bottom: 1px solid var(--light-theme);
+}
+.review_inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review_main .heading {
+  font-size: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--heading-theme);
+  display: flex;
+  gap: 7px;
+}
+
+.review-card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  margin-bottom: 20px;
+  height: 350px;
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+.review-card .country {
+  display: flex;
+  align-items: start;
+
+  gap: 7px;
+}
+.rating {
+  margin-bottom: 10px;
+}
+
+.review-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.reviewer {
+  font-style: italic;
+  color: #666;
+}
