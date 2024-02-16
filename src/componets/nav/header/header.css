@@ -29,10 +29,12 @@
   font-style: normal;
   color: var(--link-theme);
 }
-.main .main_inner .links span {
-  display: flex;
+
+.main_inner .links a:hover {
+  color: var(--link-theme);
+  cursor: pointer;
+}
+.main_inner .links a {
+  color: var(--text-theme);
   text-decoration: none;
-  color: var(--light-theme);
-  border-bottom: none;
-  gap: 30px;
 }

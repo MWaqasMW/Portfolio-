@@ -16,7 +16,7 @@ const About_Sec_2 = () => {
                             <p>I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill</p>
                         </div>
                         <div className="links">
-                            <Button lable={"CONTACT ME"} style={{ fontWeight: "700" }} />
+                            <Button lable={"Contact Me"} style={{ fontWeight: "700" }} />
                             <div className="icons"><FaLinkedinIn /></div>
                             <div className="icons"><FaGithub /></div>
                         </div>

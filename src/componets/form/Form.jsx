@@ -11,7 +11,7 @@ const Form = () => {
             <label htmlFor="text" className="label_sec">Write Quote</label>
             <textarea name="text" placeholder="Write SomeThing...">
             </textarea>
-            <div className="w-100 d-flex justify-content-center mt-4">
+            <div className="w-100 d-flex justify-content-start mt-4">
                 <Button lable={"Submit"} style={{ width: "150px" }} />
 
             </div>

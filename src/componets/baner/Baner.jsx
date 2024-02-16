@@ -16,8 +16,8 @@ const Baner = () => {
                             HI I AM <br /><strong>MUHAMMAD WAQAS</strong>
                         </div>
                         <p>
-                            A Paissented Mern stack Developer A Sydney based front-end developer passionate about building accessible and user friendly websites.
-                        </p>
+
+                            "A Passionate  MERN Stack Developer based in Karachi, with remote availability worldwide. Passionate about creating accessible and user-friendly websites, leveraging expertise to deliver exceptional digital experiences."   </p>
                         <div className="links">
                             <Button lable={"CONTACT ME"} style={{ fontWeight: "700" }} />
                             <div className="icons"><FaLinkedinIn /></div>

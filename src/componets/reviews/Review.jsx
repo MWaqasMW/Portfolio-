@@ -45,7 +45,7 @@ const Review = () => {
         <div className="review_main">
             <div className="container">
                 <div className="heading">Reviews:<span style={{ color: "#555555" }}>{totalRating.toFixed(1)}</span>
-                    <span>
+                    <span >
                         <div className="m-0 p-0">
                             {[...Array(5)].map((_, index) => (
                                 <FaStar

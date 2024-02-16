@@ -7,15 +7,21 @@
 .review_inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .review_main .heading {
+  width: 100%;
+  display: flex;
+  text-wrap: nowrap;
   font-size: 50px;
+  margin-bottom: 10px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 500;
   font-style: normal;
   color: var(--heading-theme);
   display: flex;
+  flex-wrap: wrap;
   gap: 7px;
 }
 
