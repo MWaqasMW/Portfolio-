@@ -6,6 +6,7 @@ import CurrentBreakpoint from "@/utils/breakpoints";
 import "./header.css"
 import Darwer from "@/componets/drawer/Darwer"
 import NavLink from "@/utils/hooks/useLink";
+import Button from "@/componets/button/Button";
 
 const Header = () => {
     const [open, setOpen] = useState(false)
@@ -17,7 +18,7 @@ const Header = () => {
                     <div className="links">
                         <NavLink href="/">Work</NavLink>
                         <NavLink href="/about">About</NavLink>
-                        <NavLink href="/contact">Contact</NavLink>
+                        <Button lable={"Download CV"} />
                     </div>
                 }
                 {CurrentBreakpoint() === "mobile" &&

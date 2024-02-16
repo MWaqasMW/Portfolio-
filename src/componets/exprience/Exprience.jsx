@@ -1,7 +1,7 @@
 
 'use client'
 import "./exprience.css"
-import { experienceData } from "@/utils/data"
+import { experienceData } from "@/utils/data/exprience"
 const Exprience = () => {
     return (
         <div>

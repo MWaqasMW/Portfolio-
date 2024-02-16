@@ -21,6 +21,7 @@
 
 .main .main_inner .links {
   display: flex;
+  align-items: center;
   gap: 30px;
   font-size: var(--fs-sm);
   font-family: "Inter Tight", sans-serif;

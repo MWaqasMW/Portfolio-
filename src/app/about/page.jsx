@@ -10,6 +10,7 @@ import Skill from "@/componets/skill/Skill"
 import Exprience from "@/componets/exprience/Exprience"
 import ContactSec from "@/componets/contect_sec/ContactSec"
 import Footer from "@/componets/nav/footer/Footer"
+import Faq from "@/componets/faq/Faq"
 const About = () => {
     return (
         <>
@@ -20,6 +21,7 @@ const About = () => {
             </div>
             <Skill />
             <Exprience />
+            <Faq />
             <ContactSec />
             <Footer />
         </>

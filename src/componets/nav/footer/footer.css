@@ -5,7 +5,7 @@
 }
 .footer_inner {
   text-align: left;
-  font-size: var(--fs-md);
+  font-size: var(--fs-sm);
   font-weight: 400;
   font-family: "Inter Tight", sans-serif;
   font-style: normal;
