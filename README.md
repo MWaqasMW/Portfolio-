@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Muhammad Waqas - Frontend & MERN Stack Developer
 
-## Getting Started
+<!-- Profile Picture -->
+<img src="https://media.licdn.com/dms/image/D4D03AQGRjcBJf8xO-Q/profile-displayphoto-shrink_800_800/0/1706957221297?e=1713398400&v=beta&t=p4DogJOmzUu_KKuDr5mQQZC5IydREy4UPqD0mYNZ4v8" alt="Profile Picture" width="200" height="200">
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About Me
+I am an experienced React.js and frontend developer passionate about crafting user-friendly and responsive web interfaces. My skill set includes technologies such as Bootstrap, Tailwind CSS, JavaScript, and React.js. I excel in integrating RESTful APIs, primarily leveraging Redux/Context API. Currently, I am working as a Frontend/React.js Developer at 3Const, collaborating with a dynamic team to deliver impactful digital solutions.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Name:** Muhammad Waqas
+- **Location:** Karachi, Pakistan
+- **Email:** mwaqas6001@gmail.com
+- **Phone:** 03363265520
+- **Date of Birth:** 18 August 2002
+- **LinkedIn:** [linkedin.com/in/muhammad-waqas-3b191326a](linkedin.com/in/muhammad-waqas-3b191326a)
+- **GitHub:** [github.com/MWaqasMW](github.com/MWaqasMW)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Education
+- **Frontend Stack Developer/MERN Stack Developer**
+  - Saylani Mass IT Training Center (SMIT)
+  - 12/2022 - 12/2023, Karachi
+- **Bachelor of Computer Science**
+  - Sindh Madrasatul Islam University
+  - 12/2022 - Present, Karachi
+- **Intermediate**
+  - Pakistan Shipowner's Govt College
+  - 09/2019 - 08/2021, 64%
 
-## Learn More
+## Work Experience
+- **Junior MERN Stack Developer**
+  - Saylani Mass IT Training Center (SMIT)
+  - 12/2022 - 09/2023
+- **React.js Developer & Frontend Developer**
+  - 3Const Pvt Ltd
+  - 09/2023 - 02/2024, Karachi
 
-To learn more about Next.js, take a look at the following resources:
+## Skills
+- HTML/CSS
+- Bootstrap/Tailwind CSS
+- JavaScript
+- React.js
+- Redux
+- Node.js
+- Express.js
+- Git/GitHub
+- Next.js
+- MongoDB
+- Firebase
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Projects
+1. **3Const Website**
+   - *Duration:* 12/2023 - Present
+2. **Eknow School Management System**
+   - *Duration:* [Duration]
+3. **Ahmed Medical Clinic**
+   - *Duration:* [Duration]
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Organizations
+- **3Const Pvt Ltd**
 
-## Deploy on Vercel
+## Certificates
+1. **React.js Developer Internship**
+   - *Duration:* [Duration]
+2. **MERN Stack Developer**
+   - *Duration:* 12/2022 - 12/2023
+   - *Issuer:* Saylani Mass IT Training Center (SMIT)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Interests
+- Coding
+- Exploring new technologies
+- Learning
+- Cricket
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Courses
+- App/Web Development
