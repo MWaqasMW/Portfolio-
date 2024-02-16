@@ -1,18 +1,33 @@
 .img_sec_about {
-  padding: 50px;
-  background-color: var(--main-theme);
+  position: relative; /* Position relative for absolute positioning of pseudo-element */
   color: var(--text-theme);
-  min-height: 600px;
-  height: auto;
-
+  background-color: var(--main-theme);
+  background-image: url("../../../public/images/waqas_about.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1000px;
   border-bottom: 1px solid var(--light-theme);
 }
+
+/* Adding overlay with opacity */
+.img_sec_about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here (0.5 is 50%) */
+}
+
 .img_sec_about .img {
-  margin: 0 auto;
-  padding: 50px;
-  background-color: var(--main-theme);
+  border-radius: 20px;
   color: var(--text-theme);
-  height: 600px;
+  background-color: var(--light-theme);
+  height: auto;
   max-width: 600px;
   width: 100%;
+  position: relative; /* Ensure stacking context for z-index */
+  z-index: 1; /* Ensure the image is above the overlay */
 }

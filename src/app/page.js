@@ -4,6 +4,7 @@ import Header from "@/componets/nav/header/Header";
 import Projects from "@/componets/projects/Projects";
 import ContactSec from "@/componets/contect_sec/ContactSec";
 import Footer from "@/componets/nav/footer/Footer";
+import Arrow from "@/componets/arrow/Arrow";
 
 
 export default function Page() {
@@ -15,6 +16,7 @@ export default function Page() {
     <AboutSec/>
     <ContactSec/>
     <Footer/>
+    <Arrow/>
     </>
  )
 }

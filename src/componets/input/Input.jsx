@@ -12,7 +12,7 @@ const Input = ({
         <div className="input_main">
             <label htmlFor={name}>{label}</label>
             <input
-               
+
                 type={type}
                 placeholder={placeholder}
                 value={value}

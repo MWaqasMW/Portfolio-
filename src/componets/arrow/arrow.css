@@ -1,0 +1,32 @@
+.arrow_main {
+  padding: 30px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: var(--link-theme);
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.arrow_main.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.arrow_main.show span {
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  right: 30%;
+}
+
+.arrow_main span {
+  font-size: var(--fs-md);
+  position: absolute;
+  top: 20%;
+  right: 30%;
+}

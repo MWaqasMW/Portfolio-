@@ -1,8 +1,8 @@
 'use client'
 
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import BannerImg from "../../../public/images/baner.png"
-import blurImg from "../../../public/blur/banner.png"
+import BannerImg from "../../../public/images/remove.png"
+import blurImg from "../../../public/blur/blur_2.png"
 import "./baner.css"
 import MyImage from "@/utils/imageLazy";
 import Button from "../button/Button";

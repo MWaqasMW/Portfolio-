@@ -16,7 +16,8 @@ const Header = () => {
                 <div className="LOGO">WAQAS</div>
                 {CurrentBreakpoint() === "mobile" ? null :
                     <div className="links">
-                        <NavLink href="/">Work</NavLink>
+                        <NavLink href="/">Home</NavLink>
+                        <NavLink href="/work">Work</NavLink>
                         <NavLink href="/about">About</NavLink>
                         <Button lable={"Download CV"} />
                     </div>
