@@ -6,7 +6,6 @@ import blurImg from "../../../public/blur/blur_2.png"
 import "./baner.css"
 import MyImage from "@/utils/imageLazy";
 import Button from "../button/Button";
-import NavLink from "@/utils/hooks/useLink";
 const Baner = () => {
     return (
         <div className="container-fluid baner_main m-0 p-0">

@@ -11,9 +11,9 @@ const About_Sec_2 = () => {
                     <div className="col-sm-6 col-12">
                         <div className="about_detail">
                             <div className="head">
-                                I am a front-end developer based in Sydney. Has Mechanical Engineering background.
+                                👋Hy I am a Mern Stack Developer & Frontend Developer
                             </div>
-                            <p>I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill</p>
+                            <p>Muhammad Waqas is a proficient Frontend and MERN Stack Developer, specializing in crafting intuitive user interfaces using technologies such as React.js, Nextjs Bootstrap, and Tailwind CSS.and Style Componets With a solid foundation in HTML, CSS, and JavaScript & for Backend is Node js Express Js Mongodb , along with expertise in integrating RESTful APIs using Redux/Context API. </p>
                         </div>
                         <div className="links">
                             <Button lable={"Contact Me"} style={{ fontWeight: "700" }} />

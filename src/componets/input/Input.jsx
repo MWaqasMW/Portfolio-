@@ -13,6 +13,7 @@ const Input = ({
         <div className="input_main">
             {label && <label htmlFor={name}>{label}</label>}
             <input
+                name={name}
                 style={style}
                 type={type}
                 placeholder={placeholder}

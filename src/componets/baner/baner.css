@@ -23,7 +23,7 @@
 }
 
 .baner_inner p {
-  font-size: var(--fs-xs);
+  font-size: var(--fs-sm);
   font-family: "Inter Tight", sans-serif;
   font-style: normal;
 }

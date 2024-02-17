@@ -10,15 +10,17 @@ const AboutSec = () => {
                 <div className="heading">About ME</div>
                 <div className="about_detail">
                     <div className="head">I am a front-end developer based in Sydney. Has Mechanical Engineering background. </div>
-                    <p>I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill.</p>
+                    <p>Muhammad Waqas is a proficient Frontend and MERN Stack Developer, specializing in crafting intuitive user interfaces using technologies such as React.js, Nextjs Bootstrap, and Tailwind CSS.and Style Componets With a solid foundation in HTML, CSS, and JavaScript & for Backend is Node js Express Js Mongodb and more...</p>
                 </div>
                 <div className="more_link">
 
                     <span className="d-flex gap-2 align-items-center f-4">
-                        MORE ABOUT ME
-                        <div className="fs-4    ">
-                            <NavLink href="/about"><IoArrowForward /> </NavLink>
-                        </div>
+                        <NavLink href="/about">
+                            MORE ABOUT ME
+                            <div className="fs-4    ">
+                                <IoArrowForward />
+                            </div>
+                        </NavLink>
                     </span>
                 </div>
             </div>

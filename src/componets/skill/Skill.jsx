@@ -31,7 +31,7 @@ const Skill = () => {
                     </div>
                     <div className="col-md-8 col-12 skill_detail">
                         <div className="head">
-                            I am always looking to add more skills. Morbi egestas neque eu blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus faucibus tristique ut et dolor.
+                            Muhammad Waqas is a skilled Frontend & MREN Stack Developer with expertise in a wide range of technologies. His capabilities include proficiency in HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js, Nest.js, and MongoDB. With a focus on crafting user-friendly and responsive web interfaces, Waqas excels in integrating RESTful APIs and leveraging state management solutions like Redux/Context API.
                         </div>
                         <div className="watermarks">
                             {skills.map((skill, index) => (

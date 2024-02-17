@@ -8,6 +8,7 @@
   font-weight: 700;
   cursor: pointer;
   text-wrap: nowrap;
+  font-size: var(--fs-md);
 }
 .button_main button :hover {
   background-color: var(--hover-theme);

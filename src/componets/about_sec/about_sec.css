@@ -34,4 +34,13 @@
   color: var(--link-theme);
   padding-top: 30px;
   cursor: pointer;
+  font-size: var(--fs-md);
+}
+.more_link a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: var(--link-theme);
+  cursor: pointer;
+  text-decoration: none;
 }
