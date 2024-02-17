@@ -32,7 +32,7 @@
   align-items: center;
   gap: 20px;
 }
-.baner_inner .links .icons {
+.baner_inner .links .icons a {
   padding: 5px;
   width: 30px;
   height: 30px;

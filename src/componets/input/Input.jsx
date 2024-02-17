@@ -6,13 +6,14 @@ const Input = ({
     name = '',
     placeholder = '',
     value = "",
+    style,
     onChange = () => { },
     disabled = false }) => {
     return (
         <div className="input_main">
-            <label htmlFor={name}>{label}</label>
+            {label && <label htmlFor={name}>{label}</label>}
             <input
-
+                style={style}
                 type={type}
                 placeholder={placeholder}
                 value={value}

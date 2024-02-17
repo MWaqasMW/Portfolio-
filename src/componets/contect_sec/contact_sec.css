@@ -12,8 +12,9 @@
   font-style: normal;
   color: var(--heading-theme);
 }
+
 .contact_sec_inner p {
-  font-size: var(--fs-xs);
+  font-size: var(--fs-sm);
   font-weight: 400;
   font-family: "Inter Tight", sans-serif;
   font-style: normal;

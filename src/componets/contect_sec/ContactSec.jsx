@@ -1,6 +1,5 @@
 'use client'
 
-
 import "./contact_sec.css"
 import { FaLinkedinIn, FaGithub, FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -14,7 +13,9 @@ const ContactSec = () => {
                         <div className="heading">LET’S CONNECT</div>
                         <p>Say hello at
                             <strong>
-                                mwaqas6001@gmail.com
+                                <a href="mailto:mwaqas6001@gmail.com" className="m-2 text-white">
+                                    mwaqas6001@gmail.com
+                                </a>
                             </strong>
                             For more info, here’s my
                             resume</p>

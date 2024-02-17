@@ -12,46 +12,62 @@ import work from "../../../public/images/work.png";
 import "./project.css";
 import NavLink from '@/utils/hooks/useLink';
 import project1 from "../../../public/images/project1.png"
+import project2 from "../../../public/images/project2.png"
+import project3 from "../../../public/images/project3.png"
+import project4 from "../../../public/images/project4.png"
+import project5 from "../../../public/images/project5.png"
 const Projects = ({ type }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const projectsPerPage = 2; // Number of projects to display per page
     const projects = [
         {
             id: 1,
-            title: "Promotional landing page for our favorite show",
-            description: "Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive man design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.",
+            title: "Ecommerce Website for our Portfolio and Practice",
+            description: "Teamed up with a designer to breathe life into a Ecommerce Websit for my Portfolio, a fully responsive man design with Frontend like Reactjs,Redux,Styled Componets and more otherside server create with NodeJs Express Jwt for authuntication and bcript for password secure and more and the Data Base is like a MongoDb and its Pipliens and quryreis and more the Awsome Project for learning to all.",
             year: 2023,
-            role: "Frontend Developer",
-            demoLink: "https://example.com",
-            githubLink: "https://github.com/example"
-        },
-        {
-            id: 2,
-            title: "E-commerce Website",
-            description: "Built a responsive e-commerce website using React and Redux. Implemented features such as product search, user authentication, and cart management. Utilized Redux for state management and styled-components for styling.",
-            year: 2022,
             img: project1?.src,
-            role: "Full Stack Developer",
+            role: "Mern Stack Developer",
             demoLink: "https://example.com",
-            githubLink: "https://github.com/example"
+            githubLink: "https://github.com/MWaqasMW/E-commerceStore"
         },
         {
             id: 2,
-            title: "E-commerce Website",
-            description: "Built a responsive e-commerce website using React and Redux. Implemented features such as product search, user authentication, and cart management. Utilized Redux for state management and styled-components for styling.",
-            year: 2022,
-            role: "Full Stack Developer",
-            demoLink: "https://example.com",
-            githubLink: "https://github.com/example"
+            title: "Custom Admin Panel",
+            description: "Developed a custom admin panel using React, Material-UI, and custom Sass, providing versatile components for various projects. Complete UI integration with API, supplemented with demo data for reference. Visit GitHub for details on implementation and efficiency enhancements",
+            year: 2023,
+            img: project4?.src,
+            role: "Frontend Developer",
+            githubLink: "https://github.com/MWaqasMW/Custom-AdminPanel-UI/"
         },
         {
-            id: 2,
-            title: "E-commerce Website",
-            description: "Built a responsive e-commerce website using React and Redux. Implemented features such as product search, user authentication, and cart management. Utilized Redux for state management and styled-components for styling.",
-            year: 2022,
+            id: 3,
+            title: "Real Time Chat App",
+            description: "I created a dynamic Chat App website using HTML, CSS, JavaScript, and Firebase. It features authentication via Firestore, image uploads using Firebase Storage, and real-time chat with Firebase Realtime Database. This project provided valuable learning opportunities in implementing real-time features and leveraging Firestore effectively. I'm proud of its seamless functionality.",
+            year: 2023,
+            img: project3?.src,
             role: "Full Stack Developer",
-            demoLink: "https://example.com",
-            githubLink: "https://github.com/example"
+            demoLink: "chat12-app.surge.sh/",
+            githubLink: "https://github.com/MWaqasMW/Chat-App-Firebase"
+        },
+
+        {
+            id: 4,
+            title: "Edge Home",
+            description: "I developed an impressive Booking website using React and Redux, boasting features like hotel product searches, user authentication, and room management. With ongoing updates, the UI maintains its excellence, making it a standout project in full MERN Stack Development. It's an exciting venture with promising future enhancements.",
+            year: 2023,
+            img: project5?.src,
+            role: "Frontend Developer",
+            githubLink: "https://github.com/MWaqasMW/Edge_Home"
+        },
+        {
+            id: 5,
+            title: "Promotional landing page of  Pepsi",
+            description: "I crafted a dynamic Pepsi Landing Page using HTML and CSS as part of a mini hackathon project at Smit. Despite the time constraint of 8 hours, it was an enriching experience. This project provided valuable insights and learning opportunities, marking an exciting journey into web development.",
+            year: 2022,
+            img: project2?.src,
+            role: "Frontend Developer",
+            demoLink: "https://mwaqasmw.github.io/Pepsi-Landing-page/index.html",
+            githubLink: "https://github.com/MWaqasMW/Pepsi-Landing-page"
         },
         // Add more project objects as needed
     ];
@@ -105,18 +121,22 @@ const Projects = ({ type }) => {
                                     </li>
                                 </table>
                                 <div className="info_links">
-                                    <a href={project.demoLink} target="_blank" className="d-flex gap-2 align-items-center f-4" target="_blank" rel="noopener noreferrer">
-                                        LIVE DEMO
-                                        <div className="fs-4">
-                                            <MdArrowOutward />
-                                        </div>
-                                    </a>
-                                    <a href={project.githubLink} target="_blank" className="d-flex gap-2 align-items-center f-4" target="_blank" rel="noopener noreferrer">
-                                        SEE ON GITHUB
-                                        <div className="fs-4">
-                                            <FaGithub />
-                                        </div>
-                                    </a>
+                                    {project.demoLink &&
+                                        <a href={project.demoLink} target="_blank" className="d-flex gap-2 align-items-center f-4" target="_blank" rel="noopener noreferrer">
+                                            LIVE DEMO
+                                            <div className="fs-4">
+                                                <MdArrowOutward />
+                                            </div>
+                                        </a>
+                                    }
+                                    {project.githubLink &&
+                                        <a href={project.githubLink} target="_blank" className="d-flex gap-2 align-items-center f-4" target="_blank" rel="noopener noreferrer">
+                                            SEE ON GITHUB
+                                            <div className="fs-4">
+                                                <FaGithub />
+                                            </div>
+                                        </a>
+                                    }
                                 </div>
                             </div>
                         </div>

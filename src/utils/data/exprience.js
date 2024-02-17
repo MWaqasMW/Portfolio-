@@ -11,5 +11,12 @@ export const experienceData = [
       duration: "09/2023 - 02/2024",
       location: "Karachi",
       description: "I am actively contributing as a Frontend/React.js Developer at 3Const  Pvt Ltd. My primary focus revolves around creating engaging user interfaces and seamless experiences using React.js. Proficient in handling RESTful APIs, I utilize Redux to efficiently manage state and ensure optimal performance in web applications. Being part of the dynamic team at 3Const"
+    },
+    {
+      position: "Mern Stack Developer & Frontend Developer",
+      company: "Fiverr",
+      duration: "12/2023 - Present",
+      location: "Remote",
+      description: "As a passionate MERN Stack Developer on Fiverr, I provide IT services globally, remotely creating websites and expertly resolving bugs. Leveraging my expertise in React.js and Node.js, I ensure seamless user experiences. Explore my Fiverr profile for a comprehensive view of all my gigs."
     }
   ];

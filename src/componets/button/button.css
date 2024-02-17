@@ -9,3 +9,6 @@
   cursor: pointer;
   text-wrap: nowrap;
 }
+.button_main button :hover {
+  background-color: var(--hover-theme);
+}
