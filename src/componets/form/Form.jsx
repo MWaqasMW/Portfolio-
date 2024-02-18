@@ -25,13 +25,12 @@ const Form = () => {
         try {
             const res = await axios.post("/api/qurey/", formData);
             console.log("res", res);
-            // Clear form fields after successful submission
             setFormData({
                 name: '',
                 email: '',
                 subject: '',
-                message: ''
-            });
+                message: '',
+            })
         } catch (err) {
             console.log("err", err);
         }

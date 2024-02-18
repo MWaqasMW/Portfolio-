@@ -1,7 +1,5 @@
 import { mongoose } from "mongoose";
 
-delete mongoose.models["Qurey"];
-
 const qureyScehma = new mongoose.Schema({
   name: {
     type: String,

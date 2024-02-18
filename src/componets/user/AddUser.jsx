@@ -1,8 +1,5 @@
-"use client"
-
-
-
 import React, { useState } from 'react';
+import axios from 'axios';
 
 const AddUser = () => {
   const [name, setName] = useState('');
@@ -12,20 +9,12 @@ const AddUser = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/api/user', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name, age }),
+      const response = await axios.post('http://localhost:3000/api/user/', {
+        name,
+        age
       });
 
-      if (!response.ok) {
-        throw new Error('Something went wrong while adding user');
-      }
-
-      const data = await response.json();
-      console.log('User added:', data.user);
+      console.log('User added:', response.data.user);
       // Do something with the added user data
     } catch (error) {
       console.error('Error adding user:', error.message);
