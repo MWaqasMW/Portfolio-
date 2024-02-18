@@ -10,7 +10,6 @@ import './feedback.css';
 import Button from '../button/Button';
 import CurrentBreakpoint from '@/utils/breakpoints';
 const FeedbackForm = () => {
-    console.log("CurrentBreakpoint", CurrentBreakpoint())
     const [rating, setRating] = useState(null);
     const [hover, setHover] = useState(null);
     const [feedback, setFeedback] = useState('');
@@ -26,8 +25,7 @@ const FeedbackForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Here you can send the feedback data to your backend or wherever you want to handle it
-        console.log('Rating:', rating);
-        console.log('Feedback:', feedback);
+
         // Reset the form
         setRating(null);
         setFeedback('');

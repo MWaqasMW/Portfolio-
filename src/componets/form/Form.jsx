@@ -1,16 +1,17 @@
-'use client'
 import React, { useState } from 'react';
 import Button from '../button/Button';
 import Input from '../input/Input';
 import './form.css';
+import axios from 'axios';
 
 const Form = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         subject: '',
-        quote: ''
+        message: '',
     });
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData(prevState => ({
@@ -18,16 +19,22 @@ const Form = () => {
             [name]: value
         }));
     };
-    console.log("formData", formData)
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        setFormData({
-            name: '',
-            email: '',
-            subject: '',
-            quote: ''
-        });
+        try {
+            const res = await axios.post("/api/qurey/", formData);
+            console.log("res", res);
+            // Clear form fields after successful submission
+            setFormData({
+                name: '',
+                email: '',
+                subject: '',
+                message: ''
+            });
+        } catch (err) {
+            console.log("err", err);
+        }
     };
 
     return (
@@ -54,16 +61,16 @@ const Form = () => {
                     value={formData.subject}
                     onChange={handleChange}
                 />
-                <label htmlFor="quote" className="label_sec">Write Quote</label>
+                <label htmlFor="message" className="label_sec">Write Quote</label>
                 <textarea
-                    name="quote"
-                    id="quote"
+                    name="message"
+                    id="message"
                     placeholder="Write Something..."
-                    value={formData.quote}
+                    value={formData.message}
                     onChange={handleChange}
                 ></textarea>
                 <div className="w-100 d-flex justify-content-start mt-4">
-                    <Button lable={"Submit"} style={{ width: "150px" }} />
+                    <Button lable={"Submit"} style={{ width: "150px" }} type={"submit"} />
                 </div>
             </form>
         </div>

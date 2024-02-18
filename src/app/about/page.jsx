@@ -16,7 +16,6 @@ import Button from "@/componets/button/Button"
 const About = () => {
     return (
         <>
-            <Header />
             <About_Sec_2 />
 
             <div className="img_sec_about">
@@ -43,8 +42,7 @@ const About = () => {
             <Exprience />
             <Faq />
             <ContactSec />
-            <Footer />
-            <Arrow />
+
         </>
 
     )
