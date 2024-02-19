@@ -5,7 +5,7 @@ const Button = ({ onClick, color, lable, disabled, style, link, target, type }) 
     return (
         <>
             {link &&
-                <a href={link}>
+                <a href={link} target={target}>
                     <button
                         className="button_main"
                         style={style}
