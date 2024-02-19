@@ -122,7 +122,7 @@ const Projects = ({ type }) => {
                                 </table>
                                 <div className="info_links">
                                     {project.demoLink &&
-                                        <a href={project.demoLink} target="_blank" className="d-flex gap-2 align-items-center f-4" target="_blank" rel="noopener noreferrer">
+                                        <a href={project.demoLink} target="_blank" className="d-flex gap-2 align-items-center f-4" rel="noopener noreferrer">
                                             LIVE DEMO
                                             <div className="fs-4">
                                                 <MdArrowOutward />
@@ -130,7 +130,7 @@ const Projects = ({ type }) => {
                                         </a>
                                     }
                                     {project.githubLink &&
-                                        <a href={project.githubLink} target="_blank" className="d-flex gap-2 align-items-center f-4" target="_blank" rel="noopener noreferrer">
+                                        <a href={project.githubLink} target="_blank" className="d-flex gap-2 align-items-center f-4" rel="noopener noreferrer">
                                             SEE ON GITHUB
                                             <div className="fs-4">
                                                 <FaGithub />

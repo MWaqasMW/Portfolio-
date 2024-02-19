@@ -7,17 +7,24 @@ import "./baner.css"
 import MyImage from "@/utils/imageLazy";
 import Button from "../button/Button";
 const Baner = () => {
+
+    const data = {
+        heading: "HI I AM",
+        highLight: "MUHAMMAD WAQAS",
+        para: "A Passionate as a MERN Stack Developer based in Pakistan, with remote availability worldwide. Passionate about creating accessible and user-friendly websites, leveraging expertise to deliver exceptional digital experiences."
+    }
+
     return (
         <div className="container-fluid baner_main m-0 p-0">
             <div className="container baner_inner">
                 <div className="row">
                     <div className="col">
                         <div className="heading">
-                            HI I AM <br /><strong>MUHAMMAD WAQAS</strong>
+                            <br />{data.heading}<strong></strong>
                         </div>
                         <p>
-
-                            "A Passionate as a MERN Stack Developer based in Pakistan, with remote availability worldwide. Passionate about creating accessible and user-friendly websites, leveraging expertise to deliver exceptional digital experiences."   </p>
+                            {data.para}
+                        </p>
                         <div className="links">
                             <Button lable={"CONTACT ME"} style={{ fontWeight: "700" }} link={"mailto:mwaqas6001@gmail.com"} />
                             <div className="icons" ><a href="https://www.linkedin.com/in/muhammad-waqas-3b191326a/" target="blank"><FaLinkedinIn /></a></div>
@@ -26,7 +33,7 @@ const Baner = () => {
                     </div>
                     <div className="col-lg-6 col-12 sec_col">
                         <div className="img_sec">
-                            <MyImage className="img" zIndex={0} src={BannerImg.src} placeholderSrc={blurImg} alt={"MWaqas"} className="img" />
+                            <MyImage className="img" zIndex={0} src={BannerImg.src} placeholderSrc={blurImg} alt={"MWaqas"} />
                         </div>
                     </div>
                 </div>
