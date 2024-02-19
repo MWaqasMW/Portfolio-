@@ -3,6 +3,7 @@ import Button from '../button/Button';
 import Input from '../input/Input';
 import './form.css';
 import axios from 'axios';
+import Swal from 'sweetalert2';
 
 const Form = () => {
     const [formData, setFormData] = useState({
@@ -11,7 +12,8 @@ const Form = () => {
         subject: '',
         message: '',
     });
-
+    const [errors, setErrors] = useState({});
+    const [loading, setLoading] = useState(false)
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData(prevState => ({
@@ -23,17 +25,60 @@ const Form = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("/api/qurey/", formData);
-            console.log("res", res);
-            setFormData({
-                name: '',
-                email: '',
-                subject: '',
-                message: '',
-            })
+            const formErrors = {};
+            if (formData.name.length < 3) {
+                formErrors.name = "Name must be at least 3 characters long.";
+            }
+            if (!isValidEmail(formData.email)) {
+                formErrors.email = "Invalid email format.";
+            }
+            if (!formData.subject.trim()) {
+                formErrors.subject = "Subject is required.";
+            }
+            if (!formData.message.trim()) {
+                formErrors.message = "Message is required.";
+            }
+            setErrors(formErrors);
+
+            if (Object.keys(formErrors).length === 0) {
+                setLoading(true)
+                const res = await axios.post("/api/qurey/", formData);
+                console.log("res", res);
+                if (res) {
+                    Swal.fire({
+                        title: "Good job!",
+                        text: "Thanks for that!",
+                        icon: "success",
+                        timer: 2000,
+
+                    });
+                    setLoading(false)
+                }
+                setFormData({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: '',
+                });
+            }
         } catch (err) {
+            setLoading(false)
+            if (err) {
+                Swal.fire({
+                    title: "Something Went Wrong!",
+                    text: "Please Check Internet Connection!",
+                    icon: "error",
+                    timer: 2000,
+
+                });
+            }
             console.log("err", err);
         }
+    };
+
+    const isValidEmail = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
     };
 
     return (
@@ -45,6 +90,7 @@ const Form = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
+                    error={errors.name}
                 />
                 <Input
                     placeholder="Email"
@@ -52,6 +98,7 @@ const Form = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
+                    error={errors.email}
                 />
                 <Input
                     placeholder="Subject"
@@ -59,6 +106,7 @@ const Form = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
+                    error={errors.subject}
                 />
                 <label htmlFor="message" className="label_sec">Write Quote</label>
                 <textarea
@@ -68,8 +116,13 @@ const Form = () => {
                     value={formData.message}
                     onChange={handleChange}
                 ></textarea>
+                {errors.message &&
+                    <div className="fs-4 text-danger">
+                        {errors.message}
+                    </div>
+                }
                 <div className="w-100 d-flex justify-content-start mt-4">
-                    <Button lable={"Submit"} style={{ width: "150px" }} type={"submit"} />
+                    <Button lable={loading ? "Submit..." : "Submit"} style={{ width: "150px" }} type={"submit"} />
                 </div>
             </form>
         </div>

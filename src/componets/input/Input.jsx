@@ -7,6 +7,7 @@ const Input = ({
     placeholder = '',
     value = "",
     style,
+    error,
     onChange = () => { },
     disabled = false }) => {
     return (
@@ -21,6 +22,11 @@ const Input = ({
                 onChange={onChange}
                 disabled={disabled}
             />
+            {error &&
+                <div className="fs-5 text-danger">
+                    {error}
+                </div>
+            }
         </div>
     );
 };
