@@ -1,5 +1,5 @@
 import "./button.css"
-const Button = ({ onClick, color, lable, disabled, style, link, target, type }) => {
+const Button = ({ onClick, color, lable, disabled = false, style, link, target, type }) => {
 
 
     return (
@@ -9,7 +9,7 @@ const Button = ({ onClick, color, lable, disabled, style, link, target, type }) 
                     <button
                         className="button_main"
                         style={style}
-                        onClick={disabled ? null : onClick}
+                        onClick={onClick}
                         disabled={disabled}
                         type={type}
                     >

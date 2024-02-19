@@ -1,40 +1,66 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaStar } from 'react-icons/fa';
 import axios from "axios"
+import Swal from 'sweetalert2';
 
 import './feedback.css';
 import Button from '../button/Button';
 import CurrentBreakpoint from '@/utils/breakpoints';
 
-
 const FeedbackForm = () => {
     const [feedback, setFeedback] = useState({
-        raiting: 0,
+        rating: 0,
         message: "",
     });
     const [hover, setHover] = useState(null);
+    const [loading, setLoading] = useState(false);
+    const [submitEnabled, setSubmitEnabled] = useState(false); // State to manage submit button enable/disable
+
+    useEffect(() => {
+        // Enable submit button if rating is selected
+        setSubmitEnabled(feedback.rating !== 0);
+    }, [feedback.rating]);
 
     const handleRatingClick = (value) => {
-        setFeedback(prev => ({ ...prev, raiting: value }));
+        setFeedback(prev => ({ ...prev, rating: value }));
     };
 
     const handleInputChange = (e) => {
         const { value } = e.target;
         setFeedback(prev => ({ ...prev, message: value }));
-    };
+    }
 
     const handleSubmit = async (e) => {
+        setLoading(true);
         e.preventDefault();
-        console.log("Submitting feedback:", feedback);
-        setFeedback({
-            raiting: 0,
-            message: "",
-        })
+
         try {
-            const res = await axios.post("/api/feedback/", feedback)
+            const res = await axios.post("/api/feedback/", feedback);
             console.log("res", res);
+            if (res) {
+                Swal.fire({
+                    title: "Good job!",
+                    text: "Thanks for feedBack!",
+                    icon: "success",
+                    timer: 2000,
+
+                });
+            }
+            console.log("Submitting feedback:", feedback);
+            setFeedback({ rating: 0, message: "" });
+            setLoading(false);
         } catch (err) {
+            setLoading(false);
             console.log("err", err);
+            if (err) {
+                Swal.fire({
+                    title: "SomeThing went Wrong!",
+                    text: "Please Check Internet Connection!",
+                    icon: "error",
+                    timer: 2000,
+
+                });
+            }
         }
     };
 
@@ -58,7 +84,7 @@ const FeedbackForm = () => {
                                             />
                                             <FaStar
                                                 className="star"
-                                                color={ratingValue <= (hover || feedback.raiting) ? '#ffc107' : '#e4e5e9'}
+                                                color={ratingValue <= (hover || feedback.rating) ? '#ffc107' : '#e4e5e9'}
                                                 size={CurrentBreakpoint() === "mobile" ? 50 : 70}
                                                 onMouseEnter={() => setHover(ratingValue)}
                                                 onMouseLeave={() => setHover(null)}
@@ -73,7 +99,7 @@ const FeedbackForm = () => {
                                 onChange={handleInputChange}
                             />
                             <div className='w-100 text-center'>
-                                <Button lable={"Submit"} style={{ width: "300px" }} type={"submit"} />
+                                <Button lable={loading ? "Submit.." : "Submit"} style={{ width: "300px" }} type="submit" disabled={!submitEnabled} />
                             </div>
                         </form>
                     </div>

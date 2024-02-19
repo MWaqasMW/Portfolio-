@@ -2,6 +2,7 @@ import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import "./review.css";
 import denmark from "../../../public/icons/denmark.png"
+import pak from "../../../public/icons/flag.png"
 import MyImage from '@/utils/imageLazy';
 
 const Review = () => {
@@ -11,27 +12,26 @@ const Review = () => {
             name: 'Hassan Larvel',
             rating: 5,
             review:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis metus ut nisi finibus, vel vestibulum libero sollicitudin. Aliquam nec leo neque. Pellentesque nec leo ut sem ultrices vehicula.',
+                'You did a very good job. you fixed a bug in my react code. I am very happy because i got exactly same output what I expected. you are really a hard worker. Thanks for your help.',
             profileImg: 'https://via.placeholder.com/50',
             icon: denmark.src,
             country: "Denmark"
         },
         {
             id: 2,
-            name: 'Jane Smith',
-            rating: 5,
-            review:
-                'Sed ac condimentum ipsum. Donec consequat mi in ex tempus, vel auctor velit egestas. Fusce vestibulum mauris eu metus lacinia, ut auctor sem placerat.',
-            profileImg: 'https://via.placeholder.com/50',
-            icon: denmark.src,
-            country: "Denmark" // Sample profile image URL for Jane Smith
-        },
-        {
-            id: 3,
-            name: 'Jane Smith',
+            name: 'Anmal Hassan',
             rating: 4.8,
             review:
                 'Sed ac condimentum ipsum. Donec consequat mi in ex tempus, vel auctor velit egestas. Fusce vestibulum mauris eu metus lacinia, ut auctor sem placerat.',
+            profileImg: 'https://via.placeholder.com/50',
+            icon: pak.src,
+            country: "Pakistan" // Sample profile image URL for Jane Smith
+        },
+        {
+            id: 3,
+            name: 'hasanlaravel',
+            rating: 5,
+            review: 'Awesome performance!!!. Very hard working developer. Thanks again.',
             profileImg: 'https://via.placeholder.com/50',
             icon: denmark.src,
             country: "Denmark" // Sample profile image URL for Jane Smith
@@ -44,7 +44,7 @@ const Review = () => {
     return (
         <div className="review_main">
             <div className="container">
-                <div className="heading">Reviews:<span style={{ color: "#555555" }}>{totalRating.toFixed(1)}</span>
+                <div className="heading">Fiverr and OverAll Reviews:<span style={{ color: "#555555" }}>{totalRating.toFixed(1)}</span>
                     <span >
                         <div className="m-0 p-0">
                             {[...Array(5)].map((_, index) => (

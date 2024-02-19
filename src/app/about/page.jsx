@@ -40,7 +40,7 @@ const About = () => {
                             </div>
                             <div>
 
-                                <Button lable={"Hire Now"} style={{ width: "200px" }} />
+                                <Button lable={"HIRE NOW"} link={"mailto:mwaqas6001@gmail.com"} />
                             </div>
                         </div>
                     </div>

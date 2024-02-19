@@ -16,9 +16,10 @@ const About_Sec_2 = () => {
                             <p>Muhammad Waqas is a proficient Frontend and MERN Stack Developer, specializing in crafting intuitive user interfaces using technologies such as React.js, Nextjs Bootstrap, and Tailwind CSS.and Style Componets With a solid foundation in HTML, CSS, and JavaScript & for Backend is Node js Express Js Mongodb , along with expertise in integrating RESTful APIs using Redux/Context API. </p>
                         </div>
                         <div className="links">
-                            <Button lable={"Contact Me"} style={{ fontWeight: "700" }} />
-                            <div className="icons"><FaLinkedinIn /></div>
-                            <div className="icons"><FaGithub /></div>
+                            <Button lable={"CONTACT ME"} style={{ fontWeight: "700" }} />
+                            <div className="icons" ><a href="https://www.linkedin.com/in/muhammad-waqas-3b191326a/" target="blank"><FaLinkedinIn /></a></div>
+                            <div className="icons" ><a href="https://github.com/MWaqasMW" target="blank"><FaGithub /></a></div>
+
                         </div>
                     </div>
                 </div>

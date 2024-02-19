@@ -70,3 +70,22 @@
     margin-top: 20px;
   }
 }
+
+@keyframes swingAnimation {
+  0% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+
+.baner_inner .img_sec .img {
+  border-radius: 10px;
+  opacity: 0.8 !important;
+  background-color: var(--light-theme);
+  animation: swingAnimation 6s ease-in-out infinite;
+}

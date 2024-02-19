@@ -19,7 +19,7 @@ const Header = () => {
                         <NavLink href="/">Home</NavLink>
                         <NavLink href="/about">About</NavLink>
                         <NavLink href="/work">Work</NavLink>
-                        <Button lable={"Download CV"} link={"https://drive.google.com/file/d/1rusD4utgBWRMfItn3pg363Vt-okVo88j/view?usp=sharing"} target={"blank"} />
+                        <Button lable={"DOWNLOAD CV"} link={"https://drive.google.com/file/d/1rusD4utgBWRMfItn3pg363Vt-okVo88j/view?usp=sharing"} target={"blank"} />
                     </div>
                 }
                 {CurrentBreakpoint() === "mobile" &&

@@ -6,10 +6,14 @@
   border-radius: 30px;
   border: none;
   font-weight: 600;
-  cursor: pointer;
   text-wrap: nowrap;
-  font-size: var(--fs-md);
+  font-size: var(--fs-sm);
 }
+
 .button_main button :hover {
   background-color: var(--hover-theme);
+}
+
+button:disabled {
+  cursor: not-allowed;
 }
