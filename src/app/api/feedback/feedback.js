@@ -1,7 +1,7 @@
 // pages/api/query.js
 
 import connectDb from "@/app/lib/utils";
-import { Qurey } from "@/app/lib/modal";
+import { FeedBack } from "@/app/lib/modal";
 import { NextResponse } from "next/server";
 import Decode from "@/app/utils/Decode";
 
@@ -12,12 +12,12 @@ export async function POST(req, res) {
   const body = await Decode(req.body);
   try {
     await connectDb();
-    const newQuery = new Qurey({ ...body });
-    await newQuery.save();
+    const feedBack = new FeedBack({ ...body });
+    await feedBack.save();
 
-    return NextResponse.json(newQuery, { status: 201 });
+    return NextResponse.json(feedBack, { status: 201 });
   } catch (error) {
     console.error(error.message);
-    throw new Error("Failed to save query!");
+    throw new Error("Something went wrong!");
   }
 }

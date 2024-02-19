@@ -20,15 +20,14 @@ const qureyScehma = new mongoose.Schema({
 const feedBackScehma = new mongoose.Schema({
   name: {
     type: String,
-    required: true,
   },
-  Raiting: {
+  raiting: {
     type: Number,
-    required: true,
-    max: 1,
-    min: 5,
+    require: true,
+    max: 5,
+    min: 1,
   },
-  detail: {
+  message: {
     type: String,
   },
   timestamp: { type: Date, default: Date.now },
