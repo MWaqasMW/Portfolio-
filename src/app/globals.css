@@ -1,0 +1,31 @@
+:root {
+  --main-theme: #1a1a1a;
+  --dark-theme: #555555;
+  --light-theme: #c0c0c0;
+  --link-theme: #d3e97a;
+  --hover-theme: #cddd8d;
+  --input-theme: #484848;
+  --text-theme: #c7c7c7;
+  --heading-theme: #fff;
+  --fs-xs: 16px;
+  --fs-sm: 18px;
+  --fs-md: 22px;
+  --fs-lg: 30px;
+  --fs-xl: 36px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}

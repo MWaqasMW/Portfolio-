@@ -1,0 +1,31 @@
+.contact_sec_main {
+  padding: 100px 10px;
+  background-color: var(--main-theme);
+  min-height: auto;
+  border-bottom: 1px solid var(--light-theme);
+}
+
+.contact_sec_inner .heading {
+  font-size: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--heading-theme);
+}
+
+.contact_sec_inner p {
+  font-size: var(--fs-sm);
+  font-weight: 400;
+  font-family: "Inter Tight", sans-serif;
+  font-style: normal;
+  color: var(--text-theme);
+}
+
+.contact_sec_inner .info_links {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  gap: 20px;
+  color: var(--link-theme);
+  font-size: var(--fs-lg);
+}

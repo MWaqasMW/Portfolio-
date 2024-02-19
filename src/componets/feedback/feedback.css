@@ -1,0 +1,84 @@
+.feedback_main {
+  position: relative; /* Ensure the overlay covers the entire background */
+  padding: 70px 0px;
+  background-color: var(--dark-theme);
+  height: 800px;
+  /* height: auto; */
+  border-bottom: 1px solid var(--main-theme);
+  background-image: url("../../../public/images/feedback.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.feedback_main::before {
+  content: ""; /* Create the pseudo-element */
+  position: absolute; /* Position it relative to the parent */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+}
+
+.feedback_inner {
+  display: flex;
+}
+
+.feedback-form-container {
+  position: relative; /* Add this line */
+  z-index: 1;
+  width: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback_main .heading {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--heading-theme);
+}
+
+.feedback-form-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.rating-container label {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.rating-container input[type="radio"] {
+  display: none; /* Hide the radio buttons */
+}
+
+textarea {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  outline: none;
+  color: var(--text-theme);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  font-family: "Inter Tight", sans-serif;
+  font-style: normal;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.star {
+  transition: color 0.2s;
+}

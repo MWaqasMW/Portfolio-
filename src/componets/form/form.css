@@ -1,0 +1,21 @@
+.form_main textarea {
+  margin-top: 5px;
+  padding: 20px;
+  width: 100%;
+  color: var(--heading-theme);
+  background-color: var(--input-theme);
+  outline: none;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: var(--fs-md);
+}
+
+.form_main .label_sec {
+  color: var(--light-theme);
+  font-size: var(--fs-md);
+  margin-top: 10px;
+}
+
+.form_main ::placeholder {
+  color: var(--light-theme);
+}

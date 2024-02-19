@@ -1,0 +1,24 @@
+.input_main {
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+.input_main label {
+  color: var(--light-theme);
+  font-size: var(--fs-md);
+}
+.input_main input {
+  margin-top: 5px;
+  padding: 20px;
+  width: 100%;
+  background-color: var(--input-theme);
+  outline: none;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: var(--fs-md);
+  color: var(--heading-theme);
+}
+
+.input_main ::placeholder {
+  color: var(--light-theme);
+}

@@ -1,0 +1,13 @@
+.footer_main {
+  padding: 50px 10px;
+  background-color: var(--main-theme);
+  min-height: auto;
+}
+.footer_inner {
+  text-align: left;
+  font-size: var(--fs-sm);
+  font-weight: 400;
+  font-family: "Inter Tight", sans-serif;
+  font-style: normal;
+  color: var(--text-theme);
+}

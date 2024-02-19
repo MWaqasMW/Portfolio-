@@ -1,0 +1,55 @@
+.drawer_main {
+  background-color: var(--main-theme);
+  opacity: 0.9;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(5px); /* Add blur effect */
+  overflow-y: auto; /* Allow scrolling within the drawer */
+}
+
+.drawer_main .links {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: var(--fs-xl);
+  gap: 30px;
+}
+
+.drawer_main .links span {
+  cursor: pointer;
+}
+
+.drawer_main .links span:hover {
+  color: var(--link-theme);
+  cursor: pointer;
+}
+.drawer_main .links a {
+  color: var(--text-theme);
+  text-decoration: none;
+}
+.drawer_main .links .close {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+.blur-background {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px); /* Add blur effect */
+}
+
+.no-scroll {
+  overflow: hidden; /* Disable scrolling */
+}
