@@ -6,6 +6,7 @@ import ContactSec from "@/componets/contect_sec/ContactSec";
 
 
 export default function Home() {
+
     return (
         <>
             <Baner />

@@ -7,8 +7,8 @@ const About_Sec_2 = () => {
         <div className='About_Sec_2_main'>
             <div className="container About_Sec_2_inner">
                 <div className="row">
-                    <div className="col-sm-6 col-12 heading">ABOUT ME TO ALL EVERTHING HERE</div>
-                    <div className="col-sm-6 col-12">
+                    <div className="col-sm-6 col-12 heading" data-aos="fade-right" data-aos-duration="1300" >ABOUT ME TO ALL EVERTHING HERE</div>
+                    <div className="col-sm-6 col-12" data-aos="fade-up" data-aos-duration="1300">
                         <div className="about_detail">
                             <div className="head">
                                 👋Hy I am a Mern Stack Developer & Frontend Developer

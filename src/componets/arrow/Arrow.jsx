@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import "./arrow.css";
 import { FaArrowUp } from "react-icons/fa";
+import { scrollToTop } from '@/utils/scrollTop';
 
 const Arrow = () => {
     const [showArrow, setShowArrow] = useState(false);
@@ -19,12 +20,7 @@ const Arrow = () => {
         };
     }, []);
 
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    };
+
 
     return (
         <div className={`arrow_main ${showArrow ? 'show' : 'hide'}`} onClick={scrollToTop}>

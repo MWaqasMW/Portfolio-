@@ -1,6 +1,7 @@
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import "aos/dist/aos.css";
 import Header from "@/componets/nav/header/Header";
 import Footer from "@/componets/nav/footer/Footer";
 
