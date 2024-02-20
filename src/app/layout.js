@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import "sweetalert2/src/sweetalert2.scss";
 import Header from "@/componets/nav/header/Header";
 import Footer from "@/componets/nav/footer/Footer";
+import Arrow from "@/componets/arrow/Arrow";
 
 const RootLayout = ({ children }) => {
   return (
@@ -12,6 +13,7 @@ const RootLayout = ({ children }) => {
       <body>
         <Header />
         {children}
+        <Arrow />
         <Footer />
       </body>
     </html>
