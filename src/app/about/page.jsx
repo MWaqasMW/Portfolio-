@@ -24,7 +24,6 @@ const About = () => {
     return (
         <>
             <About_Sec_2 />
-
             <div className="img_sec_about">
                 <div className="container w-100">
                     <div className="img_content" data-aos="fade-left" data-aos-duration="1300" >

@@ -4,9 +4,6 @@ import NavLink from "@/utils/hooks/useLink";
 import "./about_sec.css"
 import { IoArrowForward } from "react-icons/io5";
 const AboutSec = () => {
-
-
-
     return (
         <div className='about_sec_main'>
             <div className="container">
