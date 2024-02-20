@@ -12,11 +12,13 @@
   flex: 1;
   padding: 20px 20px;
 }
-.main .main_inner .LOGO {
+.main .main_inner .LOGO a {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: var(--fs-xl);
+  color: var(--text-theme);
+  text-decoration: none;
 }
 
 .main .main_inner .links {

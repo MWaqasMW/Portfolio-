@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <div className="main p-0 m-0">
             <div className="container main_inner ">
-                <div className="LOGO">WAQAS</div>
+                <div className="LOGO"><NavLink href="/">WAQAS</NavLink></div>
                 {CurrentBreakpoint() === "mobile" ? null :
                     <div className="links">
                         <NavLink href="/">Home</NavLink>
