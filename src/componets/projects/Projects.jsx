@@ -46,7 +46,7 @@ const Projects = ({ type }) => {
             year: 2023,
             img: project3?.src,
             role: "Full Stack Developer",
-            demoLink: "chat12-app.surge.sh/",
+            demoLink: "https://chat12-app.surge.sh/index.html",
             githubLink: "https://github.com/MWaqasMW/Chat-App-Firebase"
         },
 
