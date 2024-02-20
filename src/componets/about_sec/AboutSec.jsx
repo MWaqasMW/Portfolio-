@@ -9,7 +9,7 @@ const AboutSec = () => {
             <div className="container">
                 <div className="heading">About ME</div>
                 <div className="about_detail">
-                    <div className="head">I am a front-end developer based in Sydney. Has Mechanical Engineering background. </div>
+                    <div className="head">Hy I am a Mern Stack Developer & Frontend Developer. </div>
                     <p>Muhammad Waqas is a proficient Frontend and MERN Stack Developer, specializing in crafting intuitive user interfaces using technologies such as React.js, Nextjs Bootstrap, and Tailwind CSS.and Style Componets With a solid foundation in HTML, CSS, and JavaScript & for Backend is Node js Express Js Mongodb and more...</p>
                 </div>
                 <div className="more_link">
