@@ -27,7 +27,6 @@ const Projects = ({ type }) => {
             year: 2023,
             img: project1?.src,
             role: "Mern Stack Developer",
-            demoLink: "https://example.com",
             githubLink: "https://github.com/MWaqasMW/E-commerceStore"
         },
         {
