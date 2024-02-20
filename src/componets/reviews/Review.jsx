@@ -22,7 +22,7 @@ const Review = () => {
             name: 'Anmal Hassan',
             rating: 4.8,
             review:
-                'Sed ac condimentum ipsum. Donec consequat mi in ex tempus, vel auctor velit egestas. Fusce vestibulum mauris eu metus lacinia, ut auctor sem placerat.',
+                "We appreciate the dedication and expertise in fixing the code. The improvements have significantly enhanced our project's functionality.",
             profileImg: 'https://via.placeholder.com/50',
             icon: pak.src,
             country: "Pakistan" // Sample profile image URL for Jane Smith
