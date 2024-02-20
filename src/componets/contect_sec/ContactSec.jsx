@@ -20,10 +20,10 @@ const ContactSec = () => {
                             For more info, here’s my
                             resume</p>
                         <div className="info_links">
-                            <span><FaLinkedinIn /></span>
-                            <span><FaGithub /></span>
-                            <span><FaFacebookF /></span>
-                            <span><FaXTwitter /></span>
+                            <div className="icons" ><a href="https://www.linkedin.com/in/muhammad-waqas-3b191326a/" target="blank"><FaLinkedinIn /></a></div>
+                            <div className="icons" ><a href="https://github.com/MWaqasMW" target="blank"><FaGithub /></a></div>
+                            <div className="icons" ><a href="https://www.facebook.com/waqas.qurashi.923/" target="blank"><FaFacebookF /></a></div>
+                            {/* <span><FaXTwitter /></span> */}
                         </div>
                     </div>
 
