@@ -20,7 +20,7 @@
   color: var(--text-theme);
 }
 .project_inner .more {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-md);
   font-family: "Inter Tight", sans-serif;
   font-style: normal;
   color: var(--link-theme);

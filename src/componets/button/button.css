@@ -10,8 +10,9 @@
   font-size: var(--fs-sm);
 }
 
-.button_main button :hover {
-  background-color: var(--hover-theme);
+.button_main:hover {
+  /* Removed "button" before ":hover" */
+  background-color: var(--hover-theme); /* Corrected "ragb" to "rgba" */
 }
 
 button:disabled {

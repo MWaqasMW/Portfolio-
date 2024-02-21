@@ -16,6 +16,7 @@ import project2 from "../../../public/images/project2.png"
 import project3 from "../../../public/images/project3.png"
 import project4 from "../../../public/images/project4.png"
 import project5 from "../../../public/images/project5.png"
+import { IoArrowForward } from 'react-icons/io5';
 const Projects = ({ type }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const projectsPerPage = 2; // Number of projects to display per page
@@ -142,7 +143,9 @@ const Projects = ({ type }) => {
                     </div>
                 ))}
                 {type === "home" ? (
-                    <div className="more" onClick={moveWork}>See more</div>
+                    <div className="more d-flex justify-content-center align-item-center gap-2" onClick={moveWork}>View   <div className="fs-4    ">
+                        <IoArrowForward />
+                    </div></div>
                 ) : (
                     projects.length > currentPage * projectsPerPage && (
                         <div className="more" onClick={loadMoreProjects}>See more</div>
