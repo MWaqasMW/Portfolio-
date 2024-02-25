@@ -33,12 +33,25 @@ const feedBackScehma = new mongoose.Schema({
   timestamp: { type: Date, default: Date.now },
 });
 
-// Clear Model Cache
+const loginScehma = new mongoose.Schema({
+  email: {
+    type: String,
+    require: true,
+  },
+  password: {
+    type: String,
+    require: true,
+  },
+  timestamp: { type: Date, default: Date.now },
+});
+
 delete mongoose.models["Qurey"];
 delete mongoose.models["FeedBAck"];
+delete mongoose.models["Login"];
 
 // Create Models
 const Qurey = mongoose.model("Qurey", qureyScehma);
 const FeedBack = mongoose.model("FeedBAck", feedBackScehma);
+const Login = mongoose.model("Login", loginScehma);
 
-export { Qurey, FeedBack };
+export { Qurey, FeedBack, Login };

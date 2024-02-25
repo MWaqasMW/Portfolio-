@@ -3,7 +3,7 @@ import "./input.css"
 const Input = ({
     type = "text",
     label = "",
-    name = '',
+    name,
     placeholder = '',
     value = "",
     style,
