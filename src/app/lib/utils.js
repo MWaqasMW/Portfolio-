@@ -33,14 +33,14 @@ export const createError = (status, message) => {
   return err;
 };
 
-export const generateTokens = (user) => {
-  const accessToken = jwt.sign(
+export const generateTokens = async (user) => {
+  const accessToken = await jwt.sign(
     { userId: user._id, email: user?.email },
     process.env.ACCESS_TOKEN_SECRET
     // { expiresIn: "15m" }
   );
 
-  const refreshToken = jwt.sign(
+  const refreshToken = await jwt.sign(
     { userId: user._id, email: user?.email },
     process.env.REFRESH_TOKEN_SECRET
   );

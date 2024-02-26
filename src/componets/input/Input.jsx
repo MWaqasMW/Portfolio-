@@ -23,7 +23,7 @@ const Input = ({
                 disabled={disabled}
             />
             {error &&
-                <div className="fs-5 text-danger">
+                <div className="text-danger fs-5">
                     {error}
                 </div>
             }

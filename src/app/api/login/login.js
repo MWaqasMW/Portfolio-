@@ -4,6 +4,7 @@ import { unCryptPass, connectDb, generateTokens } from "@/app/lib/utils";
 import { User } from "@/app/lib/modal";
 import { NextResponse } from "next/server";
 import Decode from "@/app/utils/Decode";
+import { createError } from "@/app/lib/utils";
 
 export async function POST(req, res) {
   if (req.method !== "POST") {
@@ -14,23 +15,24 @@ export async function POST(req, res) {
   try {
     await connectDb();
     const user = await User.findOne({ email });
-    if (!user) return next(createError(404, "user not found"));
+    if (!user) return NextResponse.json(createError(404, "user not found"));
     const isCorrect = await unCryptPass(user?.password, password);
     if (!isCorrect) {
-      return next(createError(401, "Password is Incorrect"));
+      return NextResponse.json(createError(401, "Password is Incorrect"));
     }
-    const { password: userPassword, ...others } = user?._doc;
 
     const token = await generateTokens(user);
 
-    const data = {
-      ...others,
-      token,
-    };
-
-    return NextResponse.json(data, { status: 201 });
+    const response = NextResponse.json({
+      message: "Login Succesfully",
+      status: 201,
+    });
+    response.cookies.set("token", token?.accessToken, {
+      httpOnly: true,
+    });
+    return response;
   } catch (error) {
     console.error(error.message);
-    throw new Error("Something went wrong!");
+    throw new Error("Something went wrong!", error.message);
   }
 }
