@@ -3,6 +3,7 @@
 import Swal from "sweetalert2"
 import { useState, useEffect } from "react";
 import axios from "axios"
+import { useRouter } from "next/navigation";
 
 import Input from "@/componets/input/Input";
 import "./login.css";
@@ -18,7 +19,7 @@ const Login = () => {
         password: ""
     });
     const [loading, setLoading] = useState(false)
-
+    const router = useRouter()
 
     const handleChange = (e) => {
         const { value, name } = e.target;
@@ -59,6 +60,7 @@ const Login = () => {
                         icon: "success",
                         timer: 2000,
                     });
+                    router.push("/dashboard")
                 } else {
                     Swal.fire({
                         title: "Something went Wrong!",

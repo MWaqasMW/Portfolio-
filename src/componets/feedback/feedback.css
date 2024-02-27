@@ -3,7 +3,6 @@
   padding: 70px 0px;
   background-color: var(--dark-theme);
   height: 800px;
-  /* height: auto; */
   border-bottom: 1px solid var(--main-theme);
   background-image: url("../../../public/images/feedback.png");
   background-size: cover;
@@ -11,13 +10,13 @@
 }
 
 .feedback_main::before {
-  content: ""; /* Create the pseudo-element */
-  position: absolute; /* Position it relative to the parent */
+  content: "";
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .feedback_inner {
@@ -63,15 +62,29 @@
 .rating-container input[type="radio"] {
   display: none; /* Hide the radio buttons */
 }
+.name_input {
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 4px;
+  color: var(--text-theme);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  font-family: "Inter Tight", sans-serif;
+  font-style: normal;
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid var(--text-theme);
+}
 
-textarea {
+.text_area {
   width: 100%;
   height: 300px;
   padding: 10px;
   outline: none;
   color: var(--text-theme);
   border-radius: 4px;
-  margin-bottom: 20px;
+  margin: 25px 0px;
   font-size: var(--fs-sm);
   font-weight: 600;
   font-family: "Inter Tight", sans-serif;

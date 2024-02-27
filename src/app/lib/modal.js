@@ -20,8 +20,9 @@ const qureyScehma = new mongoose.Schema({
 const feedBackScehma = new mongoose.Schema({
   name: {
     type: String,
+    require: true,
   },
-  raiting: {
+  rating: {
     type: Number,
     require: true,
     max: 5,

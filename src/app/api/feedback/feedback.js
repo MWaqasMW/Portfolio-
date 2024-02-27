@@ -1,6 +1,6 @@
 // pages/api/query.js
 
-import connectDb from "@/app/lib/utils";
+import { connectDb } from "@/app/lib/utils";
 import { FeedBack } from "@/app/lib/modal";
 import { NextResponse } from "next/server";
 import Decode from "@/app/utils/Decode";

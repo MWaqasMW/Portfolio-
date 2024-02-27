@@ -11,28 +11,36 @@ const FeedbackForm = () => {
     const [feedback, setFeedback] = useState({
         rating: 0,
         message: "",
+        name: ""
     });
     const [hover, setHover] = useState(null);
     const [loading, setLoading] = useState(false);
-    const [submitEnabled, setSubmitEnabled] = useState(false); // State to manage submit button enable/disable
+    const [submitEnabled, setSubmitEnabled] = useState(false);
+    const [nameError, setNameError] = useState("");
 
     useEffect(() => {
-        // Enable submit button if rating is selected
-        setSubmitEnabled(feedback.rating !== 0);
-    }, [feedback.rating]);
+        setSubmitEnabled(feedback.rating !== 0 && feedback.name.length >= 3);
+    }, [feedback.rating, feedback.name]);
 
     const handleRatingClick = (value) => {
         setFeedback(prev => ({ ...prev, rating: value }));
     };
 
     const handleInputChange = (e) => {
-        const { value } = e.target;
-        setFeedback(prev => ({ ...prev, message: value }));
+        const { name, value } = e.target;
+        setFeedback(prev => ({ ...prev, [name]: value }));
+        if (name === "name") {
+            setNameError(value.length < 3 ? "Name must be at least 3 characters" : "");
+        }
     }
 
     const handleSubmit = async (e) => {
-        setLoading(true);
         e.preventDefault();
+        if (feedback.name.length < 3) {
+            setNameError("Name must be at least 3 characters");
+            return;
+        }
+        setLoading(true);
 
         try {
             const res = await axios.post("/api/feedback/", feedback);
@@ -43,24 +51,20 @@ const FeedbackForm = () => {
                     text: "Thanks for feedBack!",
                     icon: "success",
                     timer: 2000,
-
                 });
             }
             console.log("Submitting feedback:", feedback);
-            setFeedback({ rating: 0, message: "" });
-            setLoading(false);
+            setFeedback({ rating: 0, message: "", name: "" });
         } catch (err) {
-            setLoading(false);
             console.log("err", err);
-            if (err) {
-                Swal.fire({
-                    title: "SomeThing went Wrong!",
-                    text: "Please Check Internet Connection!",
-                    icon: "error",
-                    timer: 2000,
-
-                });
-            }
+            Swal.fire({
+                title: "Something went wrong!",
+                text: "Please check your internet connection.",
+                icon: "error",
+                timer: 2000,
+            });
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -93,13 +97,18 @@ const FeedbackForm = () => {
                                     );
                                 })}
                             </div>
+
+                            <input className="name_input" type="text" name="name" placeholder="Name" value={feedback?.name} onChange={handleInputChange} />
+                            {nameError && <p className="error-message text-danger m-0   ">{nameError}</p>}
                             <textarea
+                                className="text_area"
+                                name="message"
                                 placeholder="Enter your feedback here..."
                                 value={feedback.message}
                                 onChange={handleInputChange}
                             />
                             <div className='w-100 text-center'>
-                                <Button lable={loading ? "Submit.." : "Submit"} style={{ width: "300px" }} type="submit" disabled={!submitEnabled} />
+                                <Button lable={loading ? "Submitting..." : "Submit"} style={{ width: "300px" }} type="submit" disabled={!submitEnabled || loading} />
                             </div>
                         </form>
                     </div>
