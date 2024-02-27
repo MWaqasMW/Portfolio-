@@ -10,7 +10,7 @@ import Arrow from "@/componets/arrow/Arrow";
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
-      <body>
+      <body className="main_body">
         <Header />
         {children}
         <Arrow />

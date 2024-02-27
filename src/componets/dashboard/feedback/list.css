@@ -1,0 +1,36 @@
+/* ListFeedback.css */
+.feeback_main {
+  background-color: var(--main-theme);
+  color: var(--text-theme);
+  height: 500px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table .no_data {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: var(--fs-xl);
+  color: var(--light-theme);
+  padding: 30px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: var(--input-theme);
+}
+
+tr:hover {
+  background-color: var(--dark-theme);
+  cursor: pointer;
+}

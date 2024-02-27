@@ -1,8 +1,8 @@
 .review_main {
   padding: 100px 10px;
   background-color: var(--main-theme);
-  min-height: 300px;
   border-bottom: 1px solid var(--light-theme);
+  height: auto;
 }
 .review_inner {
   display: flex;

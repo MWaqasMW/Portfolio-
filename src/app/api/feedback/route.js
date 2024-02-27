@@ -1,3 +1,3 @@
-import { POST } from "./feedback";
+import { POST, GET } from "./feedback";
 
-export { POST };
+export { POST, GET };

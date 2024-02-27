@@ -21,3 +21,18 @@ export async function POST(req, res) {
     throw new Error("Something went wrong!");
   }
 }
+export async function GET(req) {
+  if (req.method !== "GET") {
+    return NextResponse.json({ error: "Method Not Allowed" });
+  }
+  try {
+    await connectDb();
+    const feedBack = await FeedBack.find();
+    console.log("feed", feedBack);
+
+    return NextResponse.json(feedBack, { status: 201 });
+  } catch (error) {
+    console.error(error.message);
+    throw new Error("Something went wrong!");
+  }
+}
