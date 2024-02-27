@@ -13,10 +13,10 @@ const Header = () => {
     return (
         <div className="main p-0 m-0">
             <div className="container main_inner ">
-                <div className="LOGO"><NavLink href="/">WAQAS</NavLink></div>
+                <div className="LOGO"><NavLink href="/home">WAQAS</NavLink></div>
                 {CurrentBreakpoint() === "mobile" ? null :
                     <div className="links">
-                        <NavLink href="/">Home</NavLink>
+                        <NavLink href="/home">Home</NavLink>
                         <NavLink href="/about">About</NavLink>
                         <NavLink href="/work">Work</NavLink>
                         <Button lable={"DOWNLOAD CV"} link={"https://drive.google.com/file/d/1rusD4utgBWRMfItn3pg363Vt-okVo88j/view?usp=sharing"} target={"blank"} />
