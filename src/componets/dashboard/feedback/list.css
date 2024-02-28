@@ -2,6 +2,11 @@
 .feeback_main {
   background-color: var(--main-theme);
   color: var(--text-theme);
+  height: 600px;
+  border-bottom: 1px solid var(--light-theme);
+  padding-bottom: 50px;
+}
+.feeback_main .feeback_inner {
   height: 500px;
   overflow-y: auto;
 }
@@ -33,4 +38,21 @@ th {
 tr:hover {
   background-color: var(--dark-theme);
   cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination button {
+  height: 30px;
+  background-color: var(--link-theme);
+}
+.pagination button :disabled {
+  background-color: var(--light-theme) !important;
+}
+.pagination .pagination-render {
+  display: flex;
+  justify-content: start;
+  background-color: var(--light-theme);
 }

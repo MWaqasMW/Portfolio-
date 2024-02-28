@@ -1,3 +1,3 @@
-import { POST } from "./qurey";
+import { POST, GET } from "./qurey";
 
-export { POST };
+export { POST, GET };

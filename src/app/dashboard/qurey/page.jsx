@@ -1,7 +1,9 @@
-
+import QureyList from "@/componets/dashboard/qurey/QureyList"
 const Qurey = () => {
     return (
-        <div>page</div>
+        <>
+            <QureyList />
+        </>
     )
 }
 

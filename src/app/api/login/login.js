@@ -22,7 +22,7 @@ export async function POST(req, res) {
     }
 
     const token = await generateTokens(user);
-
+    console.log("token", token);
     const response = NextResponse.json({
       message: "Login Succesfully",
       status: 201,

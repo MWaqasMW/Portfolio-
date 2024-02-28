@@ -22,9 +22,8 @@ const ListFeedBack = () => {
 
   return (
     <div className="feeback_main ">
+      <h1 className="text-center pb-3">Feedback</h1>
       <div className="container">
-
-        <h1>Feedback</h1>
         <table>
           <thead>
             <tr>

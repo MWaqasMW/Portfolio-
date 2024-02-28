@@ -2,7 +2,6 @@
   background-color: var(--main-theme);
   height: 300px;
 }
-
 .wrapper_inner {
   color: var(--light-theme);
   text-align: center;
@@ -10,7 +9,6 @@
   flex-direction: column;
   gap: 20px;
 }
-
 .wrapper_inner h2 {
   font-size: 50px;
   font-family: "Bebas Neue", sans-serif;

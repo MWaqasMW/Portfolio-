@@ -1,13 +1,12 @@
 .baner_main {
-  padding: 100px 50px;
   background-color: var(--main-theme);
   color: var(--text-theme);
-  min-height: 600px;
   height: auto;
   border-bottom: 1px solid var(--light-theme);
 }
 
 .baner_inner .row {
+  margin: 70px 0px;
   display: flex;
   align-items: center;
 }
