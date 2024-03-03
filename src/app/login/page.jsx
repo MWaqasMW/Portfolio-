@@ -53,7 +53,8 @@ const Login = () => {
         if (!err.email && !err.password) {
             try {
                 const res = await axios.post("/api/login/", data);
-                if (res.status >= 200 || res.status < 300) {
+
+                if (res?.data?.status > 200 && res?.data?.status < 300) {
                     Swal.fire({
                         title: "Login Successfully!",
                         text: "Welcome!",
@@ -111,7 +112,7 @@ const Login = () => {
                             error={err.password}
                         />
                     </div>
-                    <Button lable={"Login"} type={"submit"} disabled={err.email && err.password} />
+                    <Button lable={loading ? "wait.." : "Login"} disabled={loading} type={"submit"} disabled={err.email && err.password} />
                 </form>
             </div>
         </div>

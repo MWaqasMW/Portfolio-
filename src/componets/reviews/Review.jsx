@@ -19,7 +19,7 @@ const Review = () => {
         },
         {
             id: 2,
-            name: 'Anmal Hassan',
+            name: 'Haris Ahmed',
             rating: 4.8,
             review:
                 "We appreciate the dedication and expertise in fixing the code. The improvements have significantly enhanced our project's functionality.",

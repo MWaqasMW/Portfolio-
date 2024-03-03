@@ -9,6 +9,7 @@ export async function POST(req, res) {
   if (req.method !== "POST") {
     return NextResponse.json({ error: "Method Not Allowed" });
   }
+
   const body = await Decode(req.body);
   try {
     await connectDb();
@@ -25,6 +26,23 @@ export async function GET(req) {
   if (req.method !== "GET") {
     return NextResponse.json({ error: "Method Not Allowed" });
   }
+
+  // Extract the token from cookies
+  const token = req?.cookies.token;
+
+  try {
+    const isValidToken = await verifyToken(token);
+    if (!isValidToken) {
+      return NextResponse.json({ error: "Invalid token" }, { status: 401 });
+    }
+  } catch (error) {
+    console.error("Error verifying token:", error.message);
+    return NextResponse.json(
+      { error: "Token verification failed" },
+      { status: 401 }
+    );
+  }
+
   try {
     await connectDb();
     const newQuery = await Qurey.find();
