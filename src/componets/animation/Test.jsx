@@ -20,7 +20,7 @@ function Image({ id }) {
     return (
         <section>
             <div ref={ref}>
-                <img src={getRandomImage()} alt="A London skyscraper" />
+                {/* <img src={getRandomImage()} alt="A London skyscraper" /> */}
             </div>
             <motion.h2 style={{ y }}>{`#00${id}`}</motion.h2>
         </section>
