@@ -108,7 +108,7 @@ const FeedbackForm = () => {
                                 onChange={handleInputChange}
                             />
                             <div className='w-100 text-center'>
-                                <Button lable={loading ? "Submitting..." : "Submit"} style={{ width: "300px" }} type="submit" disabled={!submitEnabled || loading} />
+                                <Button lable={loading ? "wait..." : "Submit"} style={{ width: "300px" }} type="submit" disabled={!submitEnabled || loading} />
                             </div>
                         </form>
                     </div>

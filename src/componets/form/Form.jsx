@@ -122,7 +122,7 @@ const Form = () => {
                     </div>
                 }
                 <div className="w-100 d-flex justify-content-start mt-4">
-                    <Button lable={loading ? "Submit..." : "Submit"} style={{ width: "150px" }} type={"submit"} />
+                    <Button lable={loading ? "wait..." : "Submit"} style={{ width: "150px" }} type={"submit"} />
                 </div>
             </form>
         </div>
