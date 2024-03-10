@@ -25,6 +25,20 @@ export async function GET(req) {
   if (req.method !== "GET") {
     return NextResponse.json({ error: "Method Not Allowed" });
   }
+  const token = req.cookies.get("token");
+  try {
+    // const isValidToken = await verifyToken(token);
+    if (!token) {
+      return NextResponse.json({ error: "Invalid token" }, { status: 401 });
+    }
+  } catch (error) {
+    console.error("Error verifying token:", error.message);
+    return NextResponse.json(
+      { error: "Token verification failed" },
+      { status: 401 }
+    );
+  }
+
   try {
     await connectDb();
     const feedBack = await FeedBack.find();

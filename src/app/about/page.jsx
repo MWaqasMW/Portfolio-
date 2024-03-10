@@ -9,6 +9,7 @@ import Faq from "@/componets/faq/Faq"
 import Button from "@/componets/button/Button"
 import AOS from "aos";
 import { useEffect } from "react";
+import CurrentBreakpoint from "@/utils/breakpoints"
 const About = () => {
 
 
@@ -32,9 +33,8 @@ const About = () => {
                                 {data?.title}
                             </div>
                             <div>
-
                                 <div className="sub_heading">{data?.sub}</div>
-                                <p>{data?.message}.</p>
+                                <p>{CurrentBreakpoint() === "mobile" ? data?.message.slice(0, 710) : data?.message}.</p>
                             </div>
                             <div>
 

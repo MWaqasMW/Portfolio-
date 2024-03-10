@@ -20,6 +20,18 @@
   max-width: 400px;
 }
 
+.exp_inner .exp_detail .company_about {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.exp_inner .exp_detail h4 {
+  color: var(--link-theme);
+}
+.exp_inner .exp_detail span {
+  color: var(--light-theme);
+  font-size: 18px;
+}
 .exp_inner .exp_detail .heading_sec {
   display: flex;
   justify-content: space-between;
@@ -63,7 +75,7 @@
 .dot {
   width: 10px;
   height: 10px;
-  background-color: var(--light-theme); /* Adjust color as needed */
+  background-color: var(--link-theme); /* Adjust color as needed */
   border-radius: 50%;
   display: inline-block;
   margin-right: 0.5em; /* Adjust spacing between dot and text as needed */
