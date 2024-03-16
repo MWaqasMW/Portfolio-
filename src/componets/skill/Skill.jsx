@@ -3,7 +3,6 @@ import React from "react";
 import "./skill.css";
 
 const Skill = () => {
-    // Array of objects representing skills
     const skills = [
         { name: "HTML" },
         { name: "CSS" },
