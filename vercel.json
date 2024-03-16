@@ -1,0 +1,12 @@
+{
+    "build": {
+      "env": {
+        "MONGO_URL":"@MONGO_URL",
+        "PASS_KEY": "@PASS_KEY",
+        "JWT_SEC": "@JWT_SEC",
+        "ACCESS_TOKEN_SECRET": "@ACCESS_TOKEN_SECRET",
+        "REFRESH_TOKEN_SECRET": "@REFRESH_TOKEN_SECRET"
+      }
+    }
+  }
+  
