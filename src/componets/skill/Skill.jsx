@@ -14,8 +14,8 @@ const Skill = () => {
         { name: "Next js" },
         { name: "Node.js" },
         { name: "Express.js" },
-        { name: "Nest.js" },
         { name: "MongoDB" },
+        { name: "React Native" },
         // Add more skills as needed
     ];
 
@@ -33,7 +33,7 @@ const Skill = () => {
                             Muhammad Waqas is a skilled Frontend & MREN Stack Developer with expertise in a wide range of technologies. His capabilities include proficiency in HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js, Nest.js, and MongoDB. With a focus on crafting user-friendly and responsive web interfaces, Waqas excels in integrating RESTful APIs and leveraging state management solutions like Redux/Context API.
                         </div>
                         <div className="watermarks">
-                            {skills.map((skill, index) => (
+                            {skills?.map((skill, index) => (
                                 <span key={index}>{skill.name}</span>
                             ))}
                         </div>
