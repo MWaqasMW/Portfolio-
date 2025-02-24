@@ -28,11 +28,11 @@ export async function GET(req) {
   }
 
   // Extract the token from cookies
-  const token = req?.cookies.token;
-
+  const token = req.cookies.get("token");
+  console.log("token,------", token);
   try {
-    const isValidToken = await verifyToken(token);
-    if (!isValidToken) {
+    // const isValidToken = await verifyToken(token);
+    if (!token) {
       return NextResponse.json({ error: "Invalid token" }, { status: 401 });
     }
   } catch (error) {

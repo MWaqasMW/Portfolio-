@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   height: auto;
   border-bottom: 1px solid var(--light-theme);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Adding overlay with opacity */

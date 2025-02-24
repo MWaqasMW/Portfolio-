@@ -112,7 +112,7 @@ const Login = () => {
                             error={err.password}
                         />
                     </div>
-                    <Button lable={loading ? "wait.." : "Login"} disabled={loading} type={"submit"} disabled={err.email && err.password} />
+                    <Button lable={loading ? "wait.." : "Login"} disabled={loading} type={"submit"} />
                 </form>
             </div>
         </div>

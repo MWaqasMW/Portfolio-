@@ -4,10 +4,8 @@ export default function middleware(request) {
   const path = request.nextUrl.pathname;
   const token = request.cookies.get("token")?.value;
   console.log("token", token);
-  // Determine if the user is logged in
   const isLoggedIn = !!token;
 
-  // Define public and private routes
   const isPublicPath =
     path === "/" ||
     path === "/login" ||

@@ -25,7 +25,7 @@ const Review = () => {
                 "We appreciate the dedication and expertise in fixing the code. The improvements have significantly enhanced our project's functionality.",
             profileImg: 'https://via.placeholder.com/50',
             icon: pak.src,
-            country: "Pakistan" // Sample profile image URL for Jane Smith
+            country: "Pakistan"
         },
         {
             id: 3,
@@ -34,7 +34,7 @@ const Review = () => {
             review: 'Awesome performance!!!. Very hard working developer. Thanks again.',
             profileImg: 'https://via.placeholder.com/50',
             icon: denmark.src,
-            country: "Denmark" // Sample profile image URL for Jane Smith
+            country: "Denmark"
         }
     ];
 
